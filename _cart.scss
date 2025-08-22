@@ -1,0 +1,273 @@
+.top-cart{
+  background-image: url("./img/background3.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 400px;
+}
+
+.cart-text{
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 70px;
+    color: $color-title;
+    margin-top: 127px;
+    margin-bottom: 126px;
+}
+
+.cart{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: $gap;
+    margin-top: 64px;
+
+    &__text{
+        font-family: Montserrat;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 19px;
+        color: $color-text;
+
+    }
+
+    &__content{
+        grid-column: span 8;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__name-box{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 14px;
+    }
+
+    &__item{
+        border-top: 0.5px solid rgba(202, 205, 216, 1);
+        padding-top: 25px;
+        padding-bottom: $gap;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    &__product{
+        display: flex;
+        gap: $gap;
+    }
+
+    &__img{
+        width: 173px;
+    }
+
+    &__info{
+        width: 276px;
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+    }
+
+    &__name{
+        font-family: Montserrat;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 29px;
+        color: $color-text;
+    }
+
+    &__about{
+        font-family: Montserrat;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 17px;
+        color: rgba(136, 136, 136, 1);
+    }
+
+    &__price{
+        font-family: Montserrat;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 19px;
+        color: rgba(5, 5, 5, 1);
+    }
+
+    &__link-box{
+        display: flex;
+        gap: 30px;
+    }
+
+    &__link{
+        font-family: Montserrat;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 29.4px;
+        text-align: center;
+        text-decoration: underline;
+        color: $color-text
+        
+    }
+
+    &__inpt{
+        height: 51px;
+        width: 71px;
+        border: none;
+        border-radius: 6px;
+        background-color: rgba(247, 246, 246, 1);
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 29.4px;
+        text-align: center;
+
+        &::-webkit-inner-spin-button,
+        &::-webkit-outer-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+    }
+
+    &__form{
+        height: 556px;
+        background-color: rgba(247, 246, 246, 1);
+        border-radius: 20px;
+        grid-column: span 4;
+    }
+
+    &__form{
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__form-text{
+        font-family: Montserrat;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 29.26px;
+        text-align: center;
+        margin-top: 42px;
+        margin-bottom: 35px;
+    }
+
+    &__data{
+        display: flex;
+        flex-direction: column;
+        gap:44px;
+        margin-bottom: 64px; 
+        margin-left: 27px;
+        margin-right: 64px;
+        height: 143px;  
+    }
+
+    &__form-inpt{
+        height: 17px;
+        border-bottom: 1px solid rgba(202, 205, 216, 1);
+        background-color: transparent;
+        font-family: Montserrat;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 17.07px;
+        color: $color-text;
+        outline: none;
+        border-top: none; 
+        border-right: none;  
+        border-left: none; 
+
+        &::placeholder{
+            color: $color-text; 
+            }
+    }
+    
+
+    &__sum{
+        margin-bottom: 18px;
+        font-family: Montserrat;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 29.26px;
+        text-align: center;
+    }
+
+    &__result{
+        font-weight: 500;
+    }
+
+    &__btn-form{
+        height: 41px;
+        border: 1px solid rgba(4, 4, 4, 1);
+        border-radius: 20px;
+        font-family: Montserrat;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 19.5px;
+        text-align: center;
+        color: $color-text;
+        margin-bottom: 148px;
+        margin-left: 45px;
+        margin-right: 44px;
+
+        &:hover{
+            background-color:rgba(0, 0, 0, 1);
+            color:rgba(255, 255, 255, 1);
+            transition: background-color 1s;
+            transition: color 1s;
+        }
+    }
+
+    &__btn-box{
+        display: flex;
+        gap: 7px;
+        margin-bottom: 64px;
+
+    }
+
+    &__btn-clean{
+        border: 1px solid $color-text;
+        border-radius: 50px;
+        height: 37px;
+        max-width: 200px;
+        padding: 10px 34px 10px 33px;
+
+        &:hover{
+            background-color:rgba(0, 0, 0, 1);
+            color:rgba(255, 255, 255, 1);
+            transition: background-color 1s;
+            transition: color 1s;
+        }
+    }
+
+    &__btn-continue{
+        border: 1px solid $color-text;
+        border-radius: 50px;
+        height: 37px;
+        width: 200px;
+        padding: 10px 22px 10px 20px;
+
+        &:hover{
+            background-color:rgba(0, 0, 0, 1);
+            color:rgba(255, 255, 255, 1);
+            transition: background-color 1s;
+            transition: color 1s;
+        }
+    }
+}
+
+.box-link{
+    margin-top: $gap;
+    margin-bottom: 65px;
+}
+
+.link-ctlg{
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-decoration-line: underline;
+    color: $color-text;
+
+    &:hover{
+        color: rgba(136, 136, 136, 1);
+        text-decoration: none;
+        transform: 1s;
+    }
+}
+
